@@ -1,0 +1,45 @@
+#root {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "main main input"
+    "main main output";
+  grid-template-rows: 4vh 48vh 48vh;
+  grid-template-columns: 40vw 30vw 30vw;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.panel {
+  grid-area: header;
+  box-shadow: 0 0 2px rgba(0,0,0,0.5);
+  z-index: 2;
+}
+
+.editor {
+  grid-area: main;
+  background-color: aquamarine;
+  border-right: 1px solid rgb(229, 229, 229);
+}
+
+.editorIn {
+  grid-area: input;  
+}
+
+.editorOut {
+  grid-area: output;
+  border-top: 1px solid rgb(229, 229, 229);
+}
+
+.editor,
+.editorIn,
+.editorOut {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
