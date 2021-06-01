@@ -17,7 +17,7 @@
 
 .panel {
   grid-area: header;
-  box-shadow: 0 0 2px rgba(0,0,0,0.5);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   z-index: 2;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .editorIn {
-  grid-area: input;  
+  grid-area: input;
 }
 
 .editorOut {
@@ -42,4 +42,37 @@
   display: flex;
   flex-flow: column;
   height: 100%;
+}
+
+.loading-message {
+  position: absolute;
+  margin: 0 auto;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+/* Managment panel */
+
+/*  TODO:
+    - Сделать центрирование текста по вертикали
+*/
+
+.panel {
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.panel #logo {
+    margin-right: 10px;
+    font-weight: 400;
+    text-decoration: solid underline 1px;
+}
+
+.panel div {
+  margin-left: 16px;
+  height: 100%;
+  display: inline;
 }

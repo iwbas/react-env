@@ -1,9 +1,14 @@
 import "./EditorTab.css";
 import MonacoEditor from "@monaco-editor/react";
 
-const EditorTab = (props) => {
-  const { className, tabName, readOnly, miniMapShown, value, onChange } = props;
-
+const EditorTab = ({
+  className,
+  tabName,
+  readOnly,
+  miniMapShown,
+  value,
+  onChange,
+}) => {
   const options = {
     readOnly: readOnly,
     minimap: {

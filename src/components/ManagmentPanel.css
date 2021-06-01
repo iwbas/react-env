@@ -1,5 +1,23 @@
+/*  TODO:
+    - Сделать центрирование текста по вертикали
+*/
+
 .panel {
-    padding: 0 16px;
-    display: flex;
-    justify-content: space-between;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
 }
+
+.panel #logo {
+    margin-right: 10px;
+    font-weight: 400;
+    text-decoration: solid underline 1px;
+}
+
+.panel div {
+  margin-left: 16px;
+  height: 100%;
+  display: inline;
+}
+
+
